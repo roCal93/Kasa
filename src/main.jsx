@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import App from './app'
 import Home from './pages/home'
-import AboutUs from './pages/aboutUs'
-import NoFound from './pages/404'
-import HousingForm from './pages/housingForm/Index'
+import AboutUs from './pages/about-us'
+import NotFound from './pages/not-found'
+import HousingForm from './pages/housing-form'
 
 const router = createBrowserRouter([
   {
@@ -17,15 +17,15 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/AboutUs',
+        path: '/about-us',
         element: <AboutUs />,
       },
       {
-        path: '/NoFound',
-        element: <NoFound />,
+        path: '/not-found',
+        element: <NotFound />,
       },
       {
-        path: '/HousingForm',
+        path: '/housing-form',
         element: <HousingForm />,
       },
     ],

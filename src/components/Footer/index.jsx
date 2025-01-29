@@ -1,3 +1,4 @@
+import React from 'react'
 import Dfooter from '../../assets/Dfooter.png'
 
 const Footer = () => {
