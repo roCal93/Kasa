@@ -1,0 +1,9 @@
+@charset 'utf-8';
+
+@use './base/reset.scss';
+
+@use '../pages/home/home.scss';
+
+@use '../components/header/header.scss';
+
+@use '../components/footer/footer.scss';

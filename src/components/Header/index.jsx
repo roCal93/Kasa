@@ -1,17 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router'
 import Dlogo from '../../assets/Dlogo.png'
-import './styles.scss'
 
 function Header() {
+  const [isActive, setActive] = useState(true)
+  const AboutUsBorder = () => {
+    setActive(false)
+    setInactive(false)
+  }
+  const [isInactive, setInactive] = useState(true)
+  const HomepageBorder = () => {
+    setInactive(true)
+    setActive(true)
+  }
+
   return (
-    <nav>
+    <div className="header">
       <Link to="/">
-        <img className="logo" src={Dlogo} />
+        <img className="header__logo" src={Dlogo} onClick={HomepageBorder} />
       </Link>
-      <Link to="/">Accueil</Link>
-      <Link to="/about-us">A Propos</Link>
-    </nav>
+      <nav className="header__nav">
+        <Link
+          className={isInactive ? 'header__link active' : 'header__link'}
+          to="/"
+          onClick={HomepageBorder}
+        >
+          Accueil
+        </Link>
+        <Link
+          className={isActive ? 'header__link ' : 'header__link  active'}
+          to="/about-us"
+          onClick={AboutUsBorder}
+        >
+          A Propos
+        </Link>
+      </nav>
+    </div>
   )
 }
 

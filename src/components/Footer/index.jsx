@@ -3,9 +3,9 @@ import Dfooter from '../../assets/Dfooter.png'
 
 const Footer = () => {
   return (
-    <div>
-      <img src={Dfooter} />
-    </div>
+    <footer>
+      <img className="footer_banner" src={Dfooter} />
+    </footer>
   )
 }
 

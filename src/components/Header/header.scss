@@ -1,0 +1,21 @@
+@use '../../sass/utils/mixins.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 20px 0;
+  .header__logo {
+    height: 68px;
+  }
+  .header__nav {
+    display: flex;
+    gap: 57px;
+  }
+  .header__link {
+    @include mixins.headerNavFont;
+  }
+  .active {
+    border-bottom: #000000 solid 1px;
+  }
+}
