@@ -1,1 +1,14 @@
-
+.home {
+  margin: 0 100px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    display: flex;
+    z-index: 1;
+  }
+  img {
+    display: flex;
+    z-index: 0;
+  }
+}

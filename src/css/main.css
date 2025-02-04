@@ -110,7 +110,6 @@ section {
 
 body {
   line-height: 1;
-  margin: 0 100px 0 100px;
 }
 
 menu,
@@ -137,11 +136,26 @@ table {
   border-spacing: 0;
 }
 
+.home {
+  margin: 0 100px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home h1 {
+  display: flex;
+  z-index: 1;
+}
+.home img {
+  display: flex;
+  z-index: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0 20px 0;
+  margin: 20px 100px 20px 100px;
 }
 .header .header__logo {
   height: 68px;
@@ -150,15 +164,15 @@ table {
   display: flex;
   gap: 57px;
 }
+.header .header__nav .active {
+  border-bottom: #000000 solid 1px;
+}
 .header .header__link {
   font-family: "Montserrat", serif;
   text-decoration: none;
   color: #000000;
   font-size: 24px;
   font-weight: 400;
-}
-.header .active {
-  border-bottom: #000000 solid 1px;
 }
 
 .footer_banner {
