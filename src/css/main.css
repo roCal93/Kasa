@@ -142,13 +142,21 @@ table {
   align-items: center;
   justify-content: center;
 }
-.home h1 {
-  display: flex;
-  z-index: 1;
+.home .home__intro {
+  width: 100%;
+  position: relative;
 }
-.home img {
-  display: flex;
-  z-index: 0;
+.home .home__intro h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+.home .home__intro img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .header {
