@@ -1,14 +1,12 @@
 import React from 'react'
-import Dh1 from '../../assets/Dh1.png'
+import Banner from '../../components/Banner'
+import HomeCard from '../../components/HomeCard'
 
 const Home = () => {
   return (
     <div className="home">
-      <div className="home__intro">
-        <h1>Chez vous, partout et ailleurs</h1>
-        <img src={Dh1} />
-      </div>
-      <div></div>
+      <Banner aboutUs={false} />
+      <HomeCard />
     </div>
   )
 }

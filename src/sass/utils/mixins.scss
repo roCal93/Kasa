@@ -1,7 +1,16 @@
 @mixin headerNavFont {
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat';
   text-decoration: none;
   color: #000000;
   font-size: 24px;
   font-weight: 400;
+}
+
+@mixin homeH1Font {
+  font-family: 'Montserrat';
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 8px #000, 1px 1px 0 #000;
 }

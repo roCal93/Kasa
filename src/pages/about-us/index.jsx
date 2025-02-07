@@ -1,9 +1,10 @@
 import React from 'react'
+import Banner from '../../components/Banner'
 
 const AboutUs = () => {
   return (
-    <div>
-      <h2>AboutUs</h2>
+    <div className="aboutUs">
+      <Banner aboutUs={true} />
     </div>
   )
 }
