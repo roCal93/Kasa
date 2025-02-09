@@ -1,10 +1,51 @@
-.cardContainer {
-  width: 100%;
-  .card {
-    width: 30%;
+@use '../../sass/utils/mixins.scss';
 
-    .img {
-      object-fit: cover;
+.cardContainer {
+  display: flex;
+  margin: 40px 0 40px 0;
+  .cardList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    .card {
+      width: 30%;
+      height: 340px;
+      position: relative;
+      border-radius: 10px;
+      img {
+        border-radius: 10px;
+        height: 340px;
+        width: 100%;
+        object-fit: cover;
+      }
+      h2 {
+        position: absolute;
+        z-index: 2;
+        bottom: 20px;
+        left: 20px;
+        @include mixins.homeCardFont;
+      }
+    }
+    .card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgb(4, 4, 4);
+      background: linear-gradient(
+        0deg,
+        rgba(4, 4, 4, 0.5242690826330532) 0%,
+        rgba(255, 255, 255, 0) 27%
+      );
+      z-index: 1;
+      border-radius: 10px;
     }
   }
 }

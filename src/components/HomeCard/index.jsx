@@ -4,7 +4,7 @@ import { kasaList } from '../../kasaList'
 const HomeCard = () => {
   return (
     <div className="cardContainer">
-      <ul>
+      <ul className="cardList">
         {kasaList.map((kasa) => (
           <li className="card" key={kasa.id}>
             <img src={kasa.cover} />

@@ -1,5 +1,7 @@
+@use './variables.scss';
+
 @mixin headerNavFont {
-  font-family: 'Montserrat';
+  font-family: variables.$main-font;
   text-decoration: none;
   color: #000000;
   font-size: 24px;
@@ -7,10 +9,17 @@
 }
 
 @mixin homeH1Font {
-  font-family: 'Montserrat';
+  font-family: variables.$main-font;
   font-size: 48px;
   font-weight: 700;
   color: #ffffff;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 8px #000, 1px 1px 0 #000;
+}
+
+@mixin homeCardFont {
+  font-family: variables.$main-font;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
 }
