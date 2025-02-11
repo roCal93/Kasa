@@ -2,12 +2,11 @@
 
 .cardContainer {
   display: flex;
-  margin: 40px 0 40px 0;
+  margin-top: 50px;
   .cardList {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 50px;
     gap: 50px;
     background-color: #f6f6f6;
