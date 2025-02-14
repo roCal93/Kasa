@@ -109,7 +109,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 
 menu,
@@ -150,9 +150,10 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 .aboutUs .aboutUs__content {
-  margin: 50px 200px 50px 200px;
+  width: 85%;
 }
 
 .header {
@@ -238,7 +239,7 @@ h1 {
   width: 100%;
   object-fit: cover;
 }
-.cardContainer .cardList .card h2 {
+.cardContainer .cardList .card h3 {
   position: absolute;
   z-index: 2;
   bottom: 20px;
@@ -259,6 +260,85 @@ h1 {
   background: linear-gradient(0deg, rgba(4, 4, 4, 0.5242690826) 0%, rgba(255, 255, 255, 0) 27%);
   z-index: 1;
   border-radius: 10px;
+}
+
+.collapsible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  position: relative;
+}
+.collapsible .collapsible__title {
+  display: flex;
+  height: 54px;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 5px;
+}
+.collapsible .collapsible__title h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+.collapsible .collapsible__title button {
+  border: none;
+  background-color: #ff6060;
+}
+.collapsible .collapsible__title button i {
+  color: #ffffff;
+  font-size: 30px;
+  transition: transform 0.5s;
+}
+.collapsible .collapsible__title button .rotated {
+  transform: rotate(-180deg);
+}
+.collapsible p {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+  overflow: hidden;
+}
+.collapsible .close {
+  animation: 0.2s animUP forwards;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+  position: relative;
+  z-index: -1;
+  padding: 20px;
+}
+.collapsible .open {
+  animation: 0.5s animDrop forwards;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+  position: relative;
+  z-index: -1;
+  padding: 20px;
+}
+
+@keyframes animDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes animUP {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20%);
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,7 +8,7 @@ const HomeCard = () => {
         {kasaList.map((kasa) => (
           <li className="card" key={kasa.id}>
             <img src={kasa.cover} />
-            <h2>{kasa.title}</h2>
+            <h3>{kasa.title}</h3>
           </li>
         ))}
       </ul>

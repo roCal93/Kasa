@@ -1,0 +1,78 @@
+@use '../../sass/utils/mixins.scss';
+
+.collapsible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  position: relative;
+
+  .collapsible__title {
+    display: flex;
+    height: 54px;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    border-radius: 5px;
+    h2 {
+      @include mixins.collapseTitleFont;
+    }
+    button {
+      border: none;
+      background-color: #ff6060;
+
+      i {
+        color: #ffffff;
+        font-size: 30px;
+        transition: transform 0.5s;
+      }
+      .rotated {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  p {
+    @include mixins.collapseTextFont;
+    overflow: hidden;
+  }
+  .close {
+    animation: 0.2s animUP forwards;
+    background-color: #f6f6f673;
+    position: relative;
+    z-index: -1;
+    padding: 20px;
+  }
+  .open {
+    animation: 0.5s animDrop forwards;
+    background-color: #f6f6f673;
+    position: relative;
+    z-index: -1;
+    padding: 20px;
+  }
+}
+
+@keyframes animDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes animUP {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20%);
+    display: none;
+  }
+}
