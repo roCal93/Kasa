@@ -5,7 +5,6 @@ import App from './app'
 import Home from './pages/home'
 import AboutUs from './pages/about-us'
 import NotFound from './pages/not-found'
-import HousingForm from './pages/housing-form'
 
 const router = createBrowserRouter([
   {
@@ -23,10 +22,6 @@ const router = createBrowserRouter([
       {
         path: '/not-found',
         element: <NotFound />,
-      },
-      {
-        path: '/housing-form',
-        element: <HousingForm />,
       },
     ],
   },

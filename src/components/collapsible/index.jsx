@@ -17,27 +17,19 @@ const Collapsible = (props) => {
   }
   return (
     <div>
-      <ul className="collapsible">
-        {props.list.map((data) => (
-          <li key={data.id} className="collapsible__list">
-            <div className="collapsible__title">
-              <h2>{data.title}</h2>
-              <button onClick={() => toggleContent(data.id)}>
-                <i
-                  className={
-                    showMore[data.id]
-                      ? 'fa-solid fa-chevron-up rotated'
-                      : 'fa-solid fa-chevron-up'
-                  }
-                ></i>
-              </button>
-            </div>
-            <p className={showMore[data.id] ? 'open' : 'close'}>
-              {data.content}
-            </p>
-          </li>
-        ))}
-      </ul>
+      <div className="collapsible__title">
+        <h2>{props.title}</h2>
+        <button onClick={() => toggleContent(props.id)}>
+          <i
+            className={
+              showMore[props.id]
+                ? 'fa-solid fa-chevron-up rotated'
+                : 'fa-solid fa-chevron-up'
+            }
+          ></i>
+        </button>
+      </div>
+      <p className={showMore[props.id] ? 'open' : 'close'}>{props.content}</p>
     </div>
   )
 }

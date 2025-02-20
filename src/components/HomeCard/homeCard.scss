@@ -1,5 +1,7 @@
 @use '../../sass/utils/mixins.scss';
-
+.close {
+  display: none;
+}
 .cardContainer {
   display: flex;
   margin-top: 50px;
