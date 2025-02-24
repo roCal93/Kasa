@@ -1,28 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { kasaList } from '../../kasaList'
-import HousingForm from '../housingForm'
+import { Link } from 'react-router'
 
 const HomeCard = () => {
-  const [showForm, setShowForm] = useState(false)
-  const [id, setId] = useState([])
-  const toggle = (id) => {
-    setShowForm(!showForm)
-    setId(id)
-  }
   return (
     <>
-      <div className={showForm ? 'close' : 'cardContainer'}>
+      <div className="cardContainer">
         <ul className="cardList">
           {kasaList.map((kasa) => (
-            <li className="card" key={kasa.id} onClick={() => toggle(kasa.id)}>
+            <Link
+              to={`/housing-page/${kasa.id}`}
+              className="card"
+              key={kasa.id}
+            >
               <img src={kasa.cover} />
               <h3>{kasa.title}</h3>
-            </li>
+            </Link>
           ))}
         </ul>
-      </div>
-      <div className={showForm ? 'housingForm' : 'close'}>
-        <HousingForm id={id} />
       </div>
     </>
   )

@@ -5,6 +5,7 @@ import App from './app'
 import Home from './pages/home'
 import AboutUs from './pages/about-us'
 import NotFound from './pages/not-found'
+import HousingPage from './pages/housing-page'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/about-us',
         element: <AboutUs />,
+      },
+      {
+        path: '/housing-page/:id',
+        element: <HousingPage />,
       },
       {
         path: '/not-found',

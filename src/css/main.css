@@ -214,7 +214,7 @@ h1 {
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 8px #000, 1px 1px 0 #000;
 }
 
-.close {
+.hide {
   display: none;
 }
 
@@ -236,6 +236,7 @@ h1 {
   height: 340px;
   position: relative;
   border-radius: 10px;
+  cursor: pointer;
 }
 .cardContainer .cardList .card img {
   border-radius: 10px;
@@ -260,10 +261,12 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(4, 4, 4);
-  background: linear-gradient(0deg, rgba(4, 4, 4, 0.5242690826) 0%, rgba(255, 255, 255, 0) 27%);
   z-index: 1;
   border-radius: 10px;
+}
+
+.housingForm {
+  width: 100%;
 }
 
 .collapsible {
@@ -292,6 +295,7 @@ h1 {
 .collapsible .collapsible__title button {
   border: none;
   background-color: #ff6060;
+  cursor: pointer;
 }
 .collapsible .collapsible__title button i {
   color: #ffffff;
@@ -322,6 +326,47 @@ h1 {
 .collapsible .open {
   opacity: 1;
   transform: translateY(0%);
+}
+
+.slideShow {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.slideShow .slide {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
+}
+.slideShow .arrow__left {
+  height: 80px;
+  position: absolute;
+  left: 24px;
+  transform: translate(0, -50%);
+  z-index: 1;
+  cursor: pointer;
+}
+.slideShow .arrow__right {
+  height: 80px;
+  position: absolute;
+  right: 24px;
+  transform: translate(0, -50%);
+  z-index: 1;
+  cursor: pointer;
+}
+.slideShow .counter {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

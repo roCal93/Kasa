@@ -37,3 +37,10 @@
   font-size: 18px;
   color: #000000;
 }
+
+@mixin counterFont {
+  font-family: variables.$main-font;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
