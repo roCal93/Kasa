@@ -4,7 +4,7 @@ import Collapsible from '../collapsible'
 const CollapsibleList = (props) => {
   return (
     <div>
-      <ul className="collapsible">
+      <ul className="collapsible_list">
         {props.list.map((data) => (
           <li key={data.id}>
             <Collapsible

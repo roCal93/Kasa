@@ -16,20 +16,26 @@ const SlideShow = (props) => {
   }
 
   return (
-    <>
+    <div className="slideContent">
       {houseInfo.map((house) => (
-        <div className="slideShow">
-          <img className="slide" src={house.pictures[index]} />
-          <div className={numberOfPictures === 0 ? 'hide' : ''}>
-            <img className="arrow__left" src={leftArrow} onClick={oneLess} />
-            <img className="arrow__right" src={rightArrow} onClick={oneMore} />
-            <p className="counter">
-              {index + 1}/{numberOfPictures + 1}
-            </p>
-          </div>
-        </div>
+        <ul key={house.id}>
+          <li className="slideShow">
+            <img className="slide" src={house.pictures[index]} />
+            <div className={numberOfPictures === 0 ? 'hide' : ''}>
+              <img className="arrow__left" src={leftArrow} onClick={oneLess} />
+              <img
+                className="arrow__right"
+                src={rightArrow}
+                onClick={oneMore}
+              />
+              <p className="counter">
+                {index + 1}/{numberOfPictures + 1}
+              </p>
+            </div>
+          </li>
+        </ul>
       ))}
-    </>
+    </div>
   )
 }
 

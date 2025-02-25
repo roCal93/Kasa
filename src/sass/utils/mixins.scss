@@ -44,3 +44,32 @@
   font-size: 18px;
   color: #ffffff;
 }
+
+@mixin locationFont {
+  font-family: variables.$main-font;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+
+@mixin houseInfoTitle {
+  font-family: variables.$main-font;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ff6060;
+}
+
+@mixin houseInfoTag {
+  font-family: variables.$main-font;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+@mixin houseInfoHost {
+  font-family: variables.$main-font;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: right;
+  color: #ff6060;
+}

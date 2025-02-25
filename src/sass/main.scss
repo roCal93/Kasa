@@ -6,6 +6,8 @@
 
 @use '../pages/about-us/aboutUs.scss';
 
+@use '../pages/housing-page/housingPage.scss';
+
 @use '../components/header/header.scss';
 
 @use '../components/footer/footer.scss';
@@ -14,6 +16,12 @@
 
 @use '../components/HomeCard/homeCard.scss';
 
+@use '../components/collapsibleList/collapsibleList.scss';
+
 @use '../components/collapsible/collapsible.scss';
 
 @use '../components/slideShow/slideShow.scss';
+
+@use '../components/rating/rating.scss';
+
+@use '../components/HouseInfo/houseInfo.scss';

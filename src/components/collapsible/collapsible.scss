@@ -1,13 +1,6 @@
 @use '../../sass/utils/mixins.scss';
-
 .collapsible {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 40px;
-  position: relative;
-
+  width: 100%;
   .collapsible__title {
     display: flex;
     height: 54px;
@@ -34,7 +27,9 @@
       }
     }
   }
-  p {
+  .collapsible__content {
+    display: flex;
+    flex-direction: column;
     @include mixins.collapseTextFont;
     overflow: hidden;
     background-color: #f6f6f673;

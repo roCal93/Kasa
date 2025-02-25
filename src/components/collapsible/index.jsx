@@ -15,8 +15,9 @@ const Collapsible = (props) => {
       return updatedShowMore
     })
   }
+  const contentlist = props.content
   return (
-    <div>
+    <div className="collapsible">
       <div className="collapsible__title">
         <h2>{props.title}</h2>
         <button onClick={() => toggleContent(props.id)}>
@@ -29,7 +30,16 @@ const Collapsible = (props) => {
           ></i>
         </button>
       </div>
-      <p className={showMore[props.id] ? 'open' : 'close'}>{props.content}</p>
+
+      <p
+        className={
+          showMore[props.id]
+            ? ' collapsible__content open'
+            : 'collapsible__content close'
+        }
+      >
+        {props.content}
+      </p>
     </div>
   )
 }

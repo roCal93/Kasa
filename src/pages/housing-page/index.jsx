@@ -7,7 +7,7 @@ const HousingPage = () => {
   const { id } = useParams()
 
   return (
-    <div>
+    <div className="housingPage">
       <SlideShow id={id} />
       <HouseInfo id={id} />
     </div>
