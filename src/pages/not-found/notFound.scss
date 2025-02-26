@@ -1,0 +1,19 @@
+@use '../../sass/utils/mixins.scss';
+
+.notFound {
+  margin: 50px 100px 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  .notFound_title {
+    @include mixins.errorTitleFont;
+  }
+  .notFound_message {
+    @include mixins.errorMessageFont;
+  }
+  .notFound_link {
+    @include mixins.errorLinkFont;
+  }
+}

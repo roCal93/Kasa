@@ -8,7 +8,7 @@
   font-weight: 400;
 }
 
-@mixin homeH1Font {
+@mixin bannerFont {
   font-family: variables.$main-font;
   font-size: 48px;
   font-weight: 700;
@@ -72,4 +72,26 @@
   font-size: 18px;
   text-align: right;
   color: #ff6060;
+}
+
+@mixin errorTitleFont {
+  font-family: variables.$main-font;
+  font-weight: 700;
+  font-size: 288px;
+  color: #ff6060;
+  line-height: 1;
+}
+
+@mixin errorMessageFont {
+  font-family: variables.$main-font;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ff6060;
+}
+
+@mixin errorLinkFont {
+  font-family: variables.$main-font;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
 }

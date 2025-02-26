@@ -164,6 +164,34 @@ table {
   flex-direction: column;
 }
 
+.notFound {
+  margin: 50px 100px 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.notFound .notFound_title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 288px;
+  color: #ff6060;
+  line-height: 1;
+}
+.notFound .notFound_message {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 36px;
+  color: #ff6060;
+}
+.notFound .notFound_link {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -214,7 +242,7 @@ table {
   background-size: cover;
 }
 
-h1 {
+.banner__title {
   font-family: "Montserrat";
   font-size: 48px;
   font-weight: 700;

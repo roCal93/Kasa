@@ -15,7 +15,7 @@ const Collapsible = (props) => {
       return updatedShowMore
     })
   }
-  const contentlist = props.content
+  const contentList = props.content
   return (
     <div className="collapsible">
       <div className="collapsible__title">
@@ -30,7 +30,6 @@ const Collapsible = (props) => {
           ></i>
         </button>
       </div>
-
       <p
         className={
           showMore[props.id]
@@ -38,7 +37,16 @@ const Collapsible = (props) => {
             : 'collapsible__content close'
         }
       >
-        {props.content}
+        {Array.isArray(contentList) ? (
+          contentList.map((item) => (
+            <span key={item}>
+              {item}
+              <br />
+            </span>
+          ))
+        ) : (
+          <span>{contentList}</span>
+        )}
       </p>
     </div>
   )
