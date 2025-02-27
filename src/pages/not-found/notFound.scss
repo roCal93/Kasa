@@ -1,19 +1,30 @@
 @use '../../sass/utils/mixins.scss';
+@use '../../sass/utils/variables.scss';
 
 .notFound {
-  margin: 50px 100px 50px 100px;
+  margin: 15px 100px 50px 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   gap: 100px;
-  .notFound_title {
+  .notFound__title {
     @include mixins.errorTitleFont;
   }
-  .notFound_message {
+  .notFound__message {
     @include mixins.errorMessageFont;
+    .notFound__message--mobile {
+      display: none;
+      @media (max-width: variables.$mobile) {
+        display: flex;
+      }
+    }
+    @media (max-width: variables.$mobile) {
+    }
   }
-  .notFound_link {
+  .notFound__link {
     @include mixins.errorLinkFont;
+  }
+  @media (max-width: variables.$mobile) {
+    margin: 100px 20px;
   }
 }

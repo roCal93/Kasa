@@ -1,7 +1,11 @@
+@use '../../sass/utils/variables.scss';
+
 .home {
-  margin: 50px 100px 50px 100px;
+  margin: 15px 100px 50px 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  @media (max-width: variables.$mobile) {
+    margin: 10px 20px 20px 20px;
+  }
 }

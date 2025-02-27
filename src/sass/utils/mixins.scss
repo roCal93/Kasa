@@ -6,15 +6,24 @@
   color: #000000;
   font-size: 24px;
   font-weight: 400;
+  @media (max-width: variables.$mobile) {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
 
 @mixin bannerFont {
   font-family: variables.$main-font;
   font-size: 48px;
   font-weight: 700;
+  padding: 0 20px;
   color: #ffffff;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 8px #000, 1px 1px 0 #000;
+  @media (max-width: variables.$mobile) {
+    font-size: 24px;
+    padding: 0 16px;
+  }
 }
 
 @mixin homeCardFont {
@@ -22,6 +31,7 @@
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
+  padding-right: 20px;
 }
 
 @mixin collapseTitleFont {
@@ -29,6 +39,9 @@
   font-weight: 600;
   font-size: 24px;
   color: #ffffff;
+  @media (max-width: variables.$mobile) {
+    font-size: 13px;
+  }
 }
 
 @mixin collapseTextFont {
@@ -36,6 +49,9 @@
   font-weight: 300;
   font-size: 18px;
   color: #000000;
+  @media (max-width: variables.$mobile) {
+    font-size: 12px;
+  }
 }
 
 @mixin counterFont {
@@ -50,6 +66,9 @@
   font-weight: 400;
   font-size: 18px;
   color: #000000;
+  @media (max-width: variables.$mobile) {
+    font-size: 14px;
+  }
 }
 
 @mixin houseInfoTitle {
@@ -57,6 +76,9 @@
   font-weight: 400;
   font-size: 36px;
   color: #ff6060;
+  @media (max-width: variables.$mobile) {
+    font-size: 18px;
+  }
 }
 
 @mixin houseInfoTag {
@@ -64,6 +86,9 @@
   font-weight: 600;
   font-size: 14px;
   color: #ffffff;
+  @media (max-width: variables.$mobile) {
+    font-size: 10px;
+  }
 }
 
 @mixin houseInfoHost {
@@ -72,6 +97,9 @@
   font-size: 18px;
   text-align: right;
   color: #ff6060;
+  @media (max-width: variables.$mobile) {
+    font-size: 12px;
+  }
 }
 
 @mixin errorTitleFont {
@@ -80,6 +108,9 @@
   font-size: 288px;
   color: #ff6060;
   line-height: 1;
+  @media (max-width: variables.$mobile) {
+    font-size: 96px;
+  }
 }
 
 @mixin errorMessageFont {
@@ -87,6 +118,10 @@
   font-weight: 400;
   font-size: 36px;
   color: #ff6060;
+  text-align: center;
+  @media (max-width: variables.$mobile) {
+    font-size: 18px;
+  }
 }
 
 @mixin errorLinkFont {
@@ -94,4 +129,18 @@
   font-weight: 500;
   font-size: 18px;
   color: #000000;
+  @media (max-width: variables.$mobile) {
+    font-size: 14px;
+  }
+}
+
+@mixin footerFont {
+  font-family: variables.$main-font;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  @media (max-width: variables.$mobile) {
+    font-size: 12px;
+    text-align: center;
+  }
 }

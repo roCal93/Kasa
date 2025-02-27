@@ -1,18 +1,27 @@
 @use '../../sass/utils/mixins.scss';
-
+@use '../../sass/utils/variables.scss';
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 100px 20px 100px;
+  margin: 50px 100px 15px 100px;
+  @media (max-width: variables.$mobile) {
+    margin: 20px 20px 10px 20px;
+  }
   .header__logo {
     height: 68px;
+    @media (max-width: variables.$mobile) {
+      height: 46px;
+    }
   }
   .header__nav {
     display: flex;
     gap: 57px;
     .active {
       border-bottom: #000000 solid 1px;
+    }
+    @media (max-width: variables.$mobile) {
+      gap: 26px;
     }
   }
   .header__link {

@@ -1,3 +1,5 @@
+@use '../../sass/utils/variables.scss';
+
 .collapsible_list {
   display: flex;
   flex-direction: column;
@@ -5,4 +7,8 @@
   gap: 30px;
   margin-top: 40px;
   position: relative;
+  @media (max-width: variables.$mobile) {
+    gap: 20px;
+    margin-top: 20px;
+  }
 }
