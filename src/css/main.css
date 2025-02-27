@@ -563,12 +563,17 @@ table {
   object-fit: cover;
   object-position: center;
   border-radius: 25px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
 }
 @media (max-width: 800px) {
   .slideContent .slideShow .slide {
     height: 255px;
     border-radius: 10px;
   }
+}
+.slideContent .slideShow .slide.show {
+  opacity: 1;
 }
 .slideContent .slideShow .arrow__left {
   height: 80px;

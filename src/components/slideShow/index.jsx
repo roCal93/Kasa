@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { kasaList } from '../../kasaList'
 import leftArrow from '../../assets/leftArrow.png'
 import rightArrow from '../../assets/rightArrow.png'
@@ -8,19 +8,35 @@ const SlideShow = (props) => {
   const numberOfPictures =
     houseInfo.length > 0 ? houseInfo[0].pictures.length : 0
   let [index, setindex] = useState(0)
+  const [showNext, setShowNext] = useState(false)
   const oneMore = () => {
-    index !== numberOfPictures - 1 ? setindex(index + 1) : setindex((index = 0))
+    setShowNext(false)
+    setTimeout(() => {
+      index !== numberOfPictures - 1
+        ? setindex(index + 1)
+        : setindex((index = 0))
+    }, 500)
   }
   const oneLess = () => {
-    index !== 0 ? setindex(index - 1) : setindex(numberOfPictures - 1)
+    setShowNext(false)
+    setTimeout(() => {
+      index !== 0 ? setindex(index - 1) : setindex(numberOfPictures - 1)
+    }, 500)
   }
+
+  useEffect(() => {
+    setShowNext(true)
+  }, [index])
 
   return (
     <div className="slideContent">
       {houseInfo.map((house) => (
         <ul key={house.id}>
           <li className="slideShow">
-            <img className="slide" src={house.pictures[index]} />
+            <img
+              className={`slide ${showNext ? 'show' : ''}`}
+              src={house.pictures[index]}
+            />
             {numberOfPictures > 1 && (
               <div>
                 <img
