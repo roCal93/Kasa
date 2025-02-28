@@ -65,8 +65,11 @@
         rgba(255, 255, 255, 0) 27%
       );
     }
+    .card {
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+    }
   }
-}
-.housingForm {
-  width: 100%;
 }

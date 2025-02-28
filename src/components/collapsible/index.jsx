@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 
+// Component that displays in a collapsible the content passed to it as props.
 const Collapsible = (props) => {
-  const [showMore, setShowMore] = useState({})
+  const contentList = props.content
+  const [showMore, setShowMore] = useState({ [props.id]: false })
   const toggleContent = (id) => {
     // Function to update showmore state
     setShowMore((prevShowMore) => {
@@ -15,7 +17,7 @@ const Collapsible = (props) => {
       return updatedShowMore
     })
   }
-  const contentList = props.content
+
   return (
     <div className="collapsible">
       <div className="collapsible__title">
@@ -37,6 +39,8 @@ const Collapsible = (props) => {
             : 'collapsible__content close'
         }
       >
+        {/* If content list is an array, they will be displayed as a list, otherwise the content will simply be displayed.
+         */}
         {Array.isArray(contentList) ? (
           contentList.map((item) => (
             <span key={item}>

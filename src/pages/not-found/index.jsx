@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 
+// This page displays an error message in the event of an incorect route.
 const NotFound = () => {
   return (
     <div className="notFound">

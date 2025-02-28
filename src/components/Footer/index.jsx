@@ -1,11 +1,12 @@
 import React from 'react'
-import DlogoFooter from '../../assets/DlogoFooter.png'
+import logoFooter from '../../assets/logoFooter.png'
 
+// component that displays the footer.
 const Footer = () => {
   return (
     <footer className="footer">
-      <img className="footer__logo" src={DlogoFooter} />
-      <h2 className="footer__text">© 2020 Kasa. All rights reserved</h2>
+      <img className="footer__logo" src={logoFooter} alt="Logo Kasa" />
+      <p className="footer__text">© 2020 Kasa. All rights reserved</p>
     </footer>
   )
 }

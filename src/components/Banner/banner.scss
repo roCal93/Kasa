@@ -9,7 +9,7 @@
   height: 223px;
   border-radius: 25px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url(/src/assets/DHomeBanner.png);
+    url(/src/assets/homeBanner.png);
   background-position: center;
   background-size: cover;
   box-shadow: 0px 4px 4px 0px #00000040;
@@ -24,7 +24,7 @@
   height: 223px;
   border-radius: 25px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/src/assets/DAboutUsBanner.png);
+    url(/src/assets/aboutUsBanner.png);
   background-position: center;
   background-size: cover;
   @media (max-width: variables.$mobile) {

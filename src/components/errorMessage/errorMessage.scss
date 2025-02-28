@@ -1,0 +1,13 @@
+.error {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 36px;
+  color: #ff6060;
+  text-align: center;
+  border: #ff6060 2px solid;
+  padding: 10px;
+  margin: 30px;
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
+}

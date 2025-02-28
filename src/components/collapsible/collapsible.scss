@@ -3,6 +3,7 @@
 
 .collapsible {
   width: 100%;
+
   .collapsible__title {
     display: flex;
     height: 54px;
@@ -19,7 +20,6 @@
       background-color: #ff6060;
       cursor: pointer;
       padding: 0;
-
       i {
         color: #ffffff;
         font-size: 30px;
@@ -56,6 +56,7 @@
     height: 0;
     padding: 0 20px;
   }
+
   .open {
     opacity: 1;
     transform: translateY(0%);

@@ -331,7 +331,7 @@ table {
   width: 100%;
   height: 223px;
   border-radius: 25px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(/src/assets/DHomeBanner.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(/src/assets/homeBanner.png);
   background-position: center;
   background-size: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
@@ -347,7 +347,7 @@ table {
   width: 100%;
   height: 223px;
   border-radius: 25px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/src/assets/DAboutUsBanner.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/src/assets/aboutUsBanner.png);
   background-position: center;
   background-size: cover;
 }
@@ -422,7 +422,7 @@ table {
   bottom: 20px;
   left: 20px;
   font-family: "Montserrat";
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
   color: #ffffff;
   padding-right: 20px;
@@ -449,9 +449,9 @@ table {
   background: rgb(4, 4, 4);
   background: linear-gradient(0deg, rgba(4, 4, 4, 0.5242690826) 0%, rgba(255, 255, 255, 0) 27%);
 }
-
-.housingForm {
-  width: 100%;
+.cardContainer .cardList .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .collapsible_list {
@@ -563,8 +563,8 @@ table {
   object-fit: cover;
   object-position: center;
   border-radius: 25px;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  opacity: 0.8;
 }
 @media (max-width: 800px) {
   .slideContent .slideShow .slide {
@@ -629,7 +629,7 @@ table {
 .rating .star {
   color: #e3e3e3;
 }
-.rating .star_full {
+.rating .star__full {
   color: #ff6060;
 }
 @media (max-width: 800px) {
@@ -652,7 +652,7 @@ table {
     margin-top: 10px;
   }
 }
-.houseInfo .houseInfo_title {
+.houseInfo .houseInfo__title {
   margin-bottom: 10px;
   font-family: "Montserrat";
   font-weight: 400;
@@ -660,27 +660,27 @@ table {
   color: #ff6060;
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_title {
+  .houseInfo .houseInfo__title {
     font-size: 18px;
   }
 }
-.houseInfo .houseInfo_location {
+.houseInfo .houseInfo__location {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
   color: #000000;
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_location {
+  .houseInfo .houseInfo__location {
     font-size: 14px;
   }
 }
-.houseInfo .houseInfo_tagList {
+.houseInfo .houseInfo__tagList {
   display: flex;
   gap: 10px;
   margin: 20px 0;
 }
-.houseInfo .houseInfo_tagList .houseInfo_tag {
+.houseInfo .houseInfo__tagList .houseInfo__tag {
   display: flex;
   padding: 0 20px;
   min-width: 115px;
@@ -695,12 +695,12 @@ table {
   color: #ffffff;
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_tagList .houseInfo_tag {
+  .houseInfo .houseInfo__tagList .houseInfo__tag {
     font-size: 10px;
   }
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_tagList .houseInfo_tag {
+  .houseInfo .houseInfo__tagList .houseInfo__tag {
     height: 18px;
     min-width: 84px;
     border-radius: 5px;
@@ -708,24 +708,24 @@ table {
   }
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_tagList {
+  .houseInfo .houseInfo__tagList {
     margin: 10px 0;
     flex-wrap: wrap;
   }
 }
-.houseInfo .houseInfo_hostRating {
+.houseInfo .houseInfo__hostRating {
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: center;
 }
-.houseInfo .houseInfo_hostRating .houseInfo_host {
+.houseInfo .houseInfo__hostRating .houseInfo__host {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
-.houseInfo .houseInfo_hostRating .houseInfo_host .houseInfo_host-name {
+.houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--name {
   width: 93px;
   font-family: "Montserrat";
   font-weight: 400;
@@ -734,33 +734,33 @@ table {
   color: #ff6060;
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_hostRating .houseInfo_host .houseInfo_host-name {
+  .houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--name {
     font-size: 12px;
   }
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_hostRating .houseInfo_host .houseInfo_host-name {
+  .houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--name {
     width: 80px;
   }
 }
-.houseInfo .houseInfo_hostRating .houseInfo_host .houseInfo_host-img {
+.houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--img {
   height: 64px;
   width: 64px;
   border-radius: 32px;
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_hostRating .houseInfo_host .houseInfo_host-img {
+  .houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--img {
     width: 32px;
     height: 32px;
   }
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_hostRating .houseInfo_host {
+  .houseInfo .houseInfo__hostRating .houseInfo__host {
     margin-bottom: 0;
   }
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo_hostRating {
+  .houseInfo .houseInfo__hostRating {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
@@ -768,7 +768,7 @@ table {
   }
 }
 
-.houseInfo_collapsible {
+.houseInfo__collapsible {
   display: flex;
   flex-direction: row;
   gap: 76px;
@@ -776,15 +776,31 @@ table {
   justify-content: space-between;
 }
 @media (min-width: 800px) and (max-width: 1300px) {
-  .houseInfo_collapsible {
+  .houseInfo__collapsible {
     flex-direction: column;
     gap: 20px;
   }
 }
 @media (max-width: 800px) {
-  .houseInfo_collapsible {
+  .houseInfo__collapsible {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+.error {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 36px;
+  color: #ff6060;
+  text-align: center;
+  border: #ff6060 2px solid;
+  padding: 10px;
+  margin: 30px;
+}
+@media (max-width: 800px) {
+  .error {
+    font-size: 18px;
   }
 }
 

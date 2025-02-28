@@ -10,18 +10,18 @@
     flex-direction: column;
     margin-top: 10px;
   }
-  .houseInfo_title {
+  .houseInfo__title {
     margin-bottom: 10px;
     @include mixins.houseInfoTitle;
   }
-  .houseInfo_location {
+  .houseInfo__location {
     @include mixins.locationFont;
   }
-  .houseInfo_tagList {
+  .houseInfo__tagList {
     display: flex;
     gap: 10px;
     margin: 20px 0;
-    .houseInfo_tag {
+    .houseInfo__tag {
       display: flex;
       padding: 0 20px;
       min-width: 115px;
@@ -43,24 +43,24 @@
       flex-wrap: wrap;
     }
   }
-  .houseInfo_hostRating {
+  .houseInfo__hostRating {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    .houseInfo_host {
+    .houseInfo__host {
       display: flex;
       align-items: center;
       gap: 10px;
       margin-bottom: 20px;
-      .houseInfo_host-name {
+      .houseInfo__host--name {
         width: 93px;
         @include mixins.houseInfoHost;
         @media (max-width: variables.$mobile) {
           width: 80px;
         }
       }
-      .houseInfo_host-img {
+      .houseInfo__host--img {
         height: 64px;
         width: 64px;
         border-radius: 32px;
@@ -81,7 +81,7 @@
     }
   }
 }
-.houseInfo_collapsible {
+.houseInfo__collapsible {
   display: flex;
   flex-direction: row;
   gap: 76px;

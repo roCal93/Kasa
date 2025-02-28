@@ -15,8 +15,8 @@
       object-fit: cover;
       object-position: center;
       border-radius: 25px;
-      transition: opacity 0.3s ease-in-out;
-      opacity: 0;
+      transition: opacity 0.3s ease-in;
+      opacity: 0.8;
       @media (max-width: variables.$mobile) {
         height: 255px;
         border-radius: 10px;
