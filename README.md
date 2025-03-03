@@ -13,7 +13,7 @@ Cette application permet aux utilisateurs de parcourir et de réserver des propr
 
 git clone https://github.com/roCal93/Kasa.git
 
-cd Kasa.git
+cd Kasa
 
 npm install
 
@@ -21,7 +21,7 @@ npm install
 
 Pour démarrer l'application, utilisez la commande suivante:
 
-npm start
+npm run dev
 
 ## Fonctionnalités
 
