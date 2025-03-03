@@ -11,9 +11,9 @@ Cette application permet aux utilisateurs de parcourir et de réserver des propr
 
 ## Installation
 
-git clone https://github.com/votre-utilisateur/votre-depot.git
+git clone https://github.com/roCal93/Kasa.git
 
-cd votre-depot
+cd Kasa.git
 
 npm install
 
