@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Component that displays host name and picture.
 const HostInfo = (props) => {
   return (
     <div className="houseInfo__host">

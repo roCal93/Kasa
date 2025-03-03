@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Component that displays a tag for each element in the list.
 const Tags = (props) => {
   return (
     <div>
