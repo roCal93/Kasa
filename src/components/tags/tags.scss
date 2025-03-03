@@ -1,0 +1,30 @@
+@use '../../sass/utils/mixins.scss';
+@use '../../sass/utils/variables.scss';
+
+.houseInfo__tagList {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  .houseInfo__tag {
+    display: flex;
+    padding: 0 20px;
+    min-width: 115px;
+    white-space: nowrap;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #ff6060;
+    justify-content: center;
+    align-items: center;
+    @include mixins.houseInfoTag;
+    @media (max-width: variables.$mobile) {
+      height: 18px;
+      min-width: 84px;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+  }
+  @media (max-width: variables.$mobile) {
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+}

@@ -52,6 +52,7 @@ const SlideShow = (props) => {
             <img
               className={`slide ${showNext ? 'show' : ''}`}
               src={house.pictures[index]}
+              alt="Photo du bien"
             />
             {/* If there is only one picture arrows and counter will not appear */}
             {numberOfPictures > 1 && (
@@ -60,11 +61,13 @@ const SlideShow = (props) => {
                   className="arrow__left"
                   src={leftArrow}
                   onClick={oneLess}
+                  alt="flèche de navigation gauche"
                 />
                 <img
                   className="arrow__right"
                   src={rightArrow}
                   onClick={oneMore}
+                  alt="flèche de navigation droite"
                 />
                 <p className="counter">
                   {index + 1}/{numberOfPictures}

@@ -449,10 +449,6 @@ table {
   background: rgb(4, 4, 4);
   background: linear-gradient(0deg, rgba(4, 4, 4, 0.5242690826) 0%, rgba(255, 255, 255, 0) 27%);
 }
-.cardContainer .cardList .card:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
 
 .collapsible_list {
   display: flex;
@@ -675,92 +671,19 @@ table {
     font-size: 14px;
   }
 }
-.houseInfo .houseInfo__tagList {
-  display: flex;
-  gap: 10px;
-  margin: 20px 0;
-}
-.houseInfo .houseInfo__tagList .houseInfo__tag {
-  display: flex;
-  padding: 0 20px;
-  min-width: 115px;
-  height: 25px;
-  border-radius: 10px;
-  background-color: #ff6060;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 14px;
-  color: #ffffff;
-}
-@media (max-width: 800px) {
-  .houseInfo .houseInfo__tagList .houseInfo__tag {
-    font-size: 10px;
-  }
-}
-@media (max-width: 800px) {
-  .houseInfo .houseInfo__tagList .houseInfo__tag {
-    height: 18px;
-    min-width: 84px;
-    border-radius: 5px;
-    padding: 0 10px;
-  }
-}
-@media (max-width: 800px) {
-  .houseInfo .houseInfo__tagList {
-    margin: 10px 0;
-    flex-wrap: wrap;
-  }
-}
 .houseInfo .houseInfo__hostRating {
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: center;
 }
-.houseInfo .houseInfo__hostRating .houseInfo__host {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--name {
-  width: 93px;
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 18px;
-  text-align: right;
-  color: #ff6060;
-}
 @media (max-width: 800px) {
-  .houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--name {
-    font-size: 12px;
-  }
-}
-@media (max-width: 800px) {
-  .houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--name {
-    width: 80px;
-  }
-}
-.houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--img {
-  height: 64px;
-  width: 64px;
-  border-radius: 32px;
-}
-@media (max-width: 800px) {
-  .houseInfo .houseInfo__hostRating .houseInfo__host .houseInfo__host--img {
-    width: 32px;
-    height: 32px;
-  }
-}
-@media (max-width: 800px) {
-  .houseInfo .houseInfo__hostRating .houseInfo__host {
+  .houseInfo .houseInfo__hostRating {
     margin-bottom: 0;
   }
 }
 @media (max-width: 800px) {
-  .houseInfo .houseInfo__hostRating {
+  .houseInfo {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
@@ -801,6 +724,82 @@ table {
 @media (max-width: 800px) {
   .error {
     font-size: 18px;
+  }
+}
+
+.houseInfo__tagList {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.houseInfo__tagList .houseInfo__tag {
+  display: flex;
+  padding: 0 20px;
+  min-width: 115px;
+  white-space: nowrap;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+@media (max-width: 800px) {
+  .houseInfo__tagList .houseInfo__tag {
+    font-size: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .houseInfo__tagList .houseInfo__tag {
+    height: 18px;
+    min-width: 84px;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 800px) {
+  .houseInfo__tagList {
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+}
+
+.houseInfo__host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.houseInfo__host .houseInfo__host--name {
+  width: 93px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  text-align: right;
+  color: #ff6060;
+}
+@media (max-width: 800px) {
+  .houseInfo__host .houseInfo__host--name {
+    font-size: 12px;
+  }
+}
+@media (max-width: 800px) {
+  .houseInfo__host .houseInfo__host--name {
+    width: 80px;
+  }
+}
+.houseInfo__host .houseInfo__host--img {
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+}
+@media (max-width: 800px) {
+  .houseInfo__host .houseInfo__host--img {
+    width: 32px;
+    height: 32px;
   }
 }
 

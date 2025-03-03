@@ -1,0 +1,25 @@
+@use '../../sass/utils/mixins.scss';
+@use '../../sass/utils/variables.scss';
+
+.houseInfo__host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  .houseInfo__host--name {
+    width: 93px;
+    @include mixins.houseInfoHost;
+    @media (max-width: variables.$mobile) {
+      width: 80px;
+    }
+  }
+  .houseInfo__host--img {
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+    @media (max-width: variables.$mobile) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

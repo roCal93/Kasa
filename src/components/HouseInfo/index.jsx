@@ -3,6 +3,8 @@ import { kasaList } from '../../kasaList'
 import Rating from '../rating'
 import Collapsible from '../collapsible'
 import ErrorMessage from '../errorMessage'
+import Tags from '../tags'
+import HostInfo from '../hostInfo'
 
 // Component that displays selected house data.
 const HouseInfo = (props) => {
@@ -14,22 +16,13 @@ const HouseInfo = (props) => {
         <div>
           <h2 className="houseInfo__title">{selectedHouse.title}</h2>
           <h3 className="houseInfo__location">{selectedHouse.location}</h3>
-          <ul className="houseInfo__tagList">
-            {selectedHouse.tags.map((tag) => (
-              <li className="houseInfo__tag" key={tag}>
-                {tag}
-              </li>
-            ))}
-          </ul>
+          <Tags tags={selectedHouse.tags} />
         </div>
         <div className="houseInfo__hostRating">
-          <div className="houseInfo__host">
-            <h4 className="houseInfo__host--name">{selectedHouse.host.name}</h4>
-            <img
-              className="houseInfo__host--img"
-              src={selectedHouse.host.picture}
-            />
-          </div>
+          <HostInfo
+            name={selectedHouse.host.name}
+            picture={selectedHouse.host.picture}
+          />
           <Rating ratingValue={selectedHouse.rating} />
         </div>
       </div>
