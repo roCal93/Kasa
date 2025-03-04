@@ -3,7 +3,7 @@ import { kasaList } from '../../kasaList'
 import { Link } from 'react-router'
 import ErrorMessage from '../errorMessage'
 
-// Component that displays a card for each element in the list.
+// Component that displays a card for each element in the list
 const HomeCard = () => {
   return (
     <div>

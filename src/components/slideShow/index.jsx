@@ -4,7 +4,7 @@ import leftArrow from '../../assets/leftArrow.png'
 import rightArrow from '../../assets/rightArrow.png'
 import ErrorMessage from '../errorMessage'
 
-// This component is used to display images of houses selected in a slideshow.
+// Component that displays images of selected houses in a slideshow
 const SlideShow = (props) => {
   const selectedHouse = kasaList.filter((house) => house.id === `${props.id}`)
   if (!selectedHouse || selectedHouse.length === 0) {
@@ -19,7 +19,7 @@ const SlideShow = (props) => {
   const [index, setindex] = useState(0)
   const [showNext, setShowNext] = useState(false)
 
-  // Function that allows me to display the next image of my array.
+  // Function that allows me to display the next image of my array
   const oneMore = () => {
     setShowNext(false)
     setTimeout(() => {
@@ -29,7 +29,7 @@ const SlideShow = (props) => {
     }, 300)
   }
 
-  // Function that allows me to display the previous image of my array.
+  // Function that allows me to display the previous image of my array
   const oneLess = () => {
     setShowNext(false)
     setTimeout(() => {
@@ -39,7 +39,7 @@ const SlideShow = (props) => {
     }, 300)
   }
 
-  // Function that set showNext at true every time index change.
+  // Function that sets showNext as true at every change of index
   useEffect(() => {
     setShowNext(true)
   }, [index])

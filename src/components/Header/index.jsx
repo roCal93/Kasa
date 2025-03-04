@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, NavLink } from 'react-router'
 import logo from '../../assets/logo.png'
 
-// component that displays the header with the navigation menu.
+// Component that displays the header with the navigation menu
 function Header() {
   return (
     <div className="header">

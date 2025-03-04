@@ -1,7 +1,7 @@
 import React from 'react'
 import logoFooter from '../../assets/logoFooter.png'
 
-// component that displays the footer.
+// Component that displays the footer
 const Footer = () => {
   return (
     <footer className="footer">

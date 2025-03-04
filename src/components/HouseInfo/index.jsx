@@ -6,7 +6,7 @@ import ErrorMessage from '../errorMessage'
 import Tags from '../tags'
 import HostInfo from '../hostInfo'
 
-// Component that displays selected house data.
+// Component that displays selected house data
 const HouseInfo = (props) => {
   const selectedHouse = kasaList.find((house) => house.id === `${props.id}`)
   if (!selectedHouse) return <ErrorMessage message="Maison introuvable" />
@@ -34,7 +34,7 @@ const HouseInfo = (props) => {
         />
         <Collapsible
           id="2"
-          title="Équipments"
+          title="Équipements"
           content={selectedHouse.equipments}
         />
       </div>

@@ -4,7 +4,7 @@ import SlideShow from '../../components/slideShow'
 import HouseInfo from '../../components/HouseInfo'
 import { kasaList } from '../../kasaList'
 
-//This page displays the photos and information of the selected house.
+//This page displays the photos and information of the selected house
 const HousingPage = () => {
   const { id } = useParams()
   const navigate = useNavigate()
