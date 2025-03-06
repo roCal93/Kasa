@@ -7,9 +7,6 @@ import ErrorMessage from '../errorMessage'
 // Component that displays images of selected houses in a slideshow
 const SlideShow = (props) => {
   const selectedHouse = kasaList.filter((house) => house.id === `${props.id}`)
-  if (!selectedHouse || selectedHouse.length === 0) {
-    return <ErrorMessage message="Maison non trouvée." />
-  }
   const numberOfPictures =
     selectedHouse.length > 0 ? selectedHouse[0].pictures.length : 0
   if (numberOfPictures === 0) {
