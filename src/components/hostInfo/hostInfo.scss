@@ -22,4 +22,7 @@
       height: 32px;
     }
   }
+  @media (max-width: variables.$mobile) {
+    margin: 0px;
+  }
 }

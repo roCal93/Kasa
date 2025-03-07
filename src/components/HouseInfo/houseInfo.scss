@@ -25,12 +25,14 @@
 
     @media (max-width: variables.$mobile) {
       margin-bottom: 0;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
     }
   }
   @media (max-width: variables.$mobile) {
-    flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 10px;
   }
 }
