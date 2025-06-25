@@ -2,7 +2,7 @@
   "name": "kasa",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://roCal93.github.io/Kasa/",
+  "homepage": "https://roCal93.github.io/Kasa",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
