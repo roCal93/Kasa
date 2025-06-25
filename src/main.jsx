@@ -33,7 +33,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: '/Kasa', // Ajoutez cette option
+    basename: '/Kasa/', // Ajoutez cette option
   }
 )
 
