@@ -9,7 +9,7 @@ import HousingPage from './pages/housing-page'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/Kasa/',
     element: <App />,
     children: [
       {
