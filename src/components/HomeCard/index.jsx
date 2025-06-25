@@ -12,7 +12,7 @@ const HomeCard = () => {
           {kasaList && kasaList.length > 0 ? (
             kasaList.map((card) => (
               <Link
-                to={`/housing-page/${card.id}`}
+                to={`housing-page/${card.id}`}
                 className="card"
                 key={card.id}
               >

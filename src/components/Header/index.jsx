@@ -13,7 +13,7 @@ function Header() {
         <NavLink className="header__link" to="/">
           Accueil
         </NavLink>
-        <NavLink className="header__link" to="/about-us">
+        <NavLink className="header__link" to="about-us">
           A Propos
         </NavLink>
       </nav>
